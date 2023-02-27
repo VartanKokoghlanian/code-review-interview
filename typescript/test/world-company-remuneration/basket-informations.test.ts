@@ -8,9 +8,8 @@ describe("a basket should cost", () => {
 
     test("1000 otherwise", () => {
         let basketInformations = new BasketInformations();
-        basketInformations.addProductToBasket("Toto", 1000)
+        basketInformations.addProductToBasket("Toto", 1000) // Promo = false
         expect(basketInformations.getBasketPrice(false)).toBe(1000);
     });
 
 });
-
